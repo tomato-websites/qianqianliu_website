@@ -148,7 +148,7 @@ body {
 /* === Home Section Overrides === */
 #home p,
 #home h3 {
-  margin-left: 5em;
+  margin-left: 0em;
   margin-right: 5em;
   color: #cfe8cf;
 }
