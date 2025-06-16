@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qianqian Liu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="panel">
+    <div class="intro" id="intro">
+      <img src="yourphoto.jpg" alt="Qianqian Liu" />
+      <div class="intro-text">
+        <h1>Qianqian Liu</h1>
+        <p>London • Oxford • Beijing </p>
+	<div class="contact-buttons">
+	<button onclick="location.href='mailto:qianqian.liu.22@ucl.ac.uk'"><img src="Email_icon.png" alt="e-mail" /></button>	
+        <button onclick="location.href='https://profiles.ucl.ac.uk/90036-qianqian-liu'"><img src="dept-logo.png" alt="Dept" /></button>
+       <button onclick="location.href='https://www.linkedin.com/in/qianqian-liu-1b4681187/'"><img src="linkedin-logo.png" alt="LinkedIn" /></button>
+      </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button onclick="showSection('home')">About Me</button>
+      <button onclick="window.open('CV.pdf', '_blank')">CV</button>
+    </div>
+
+    <div class="content hidden" id="home" class="hidden">
+	<p>I'm a PhD Researcher in Human Geography at UCL, focusing on urban regeneration, cultural heritage, and museum studies.</p>
+<p>I come from a background archaeology, and I completed my BA at Peking University and my MPhil at the University of Oxford</p>
+    </div>
+
+    
+  <script>
+    function showSection(sectionId) {
+      const sections = ['home'];
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+      const section = document.getElementById(sectionId);
+      if (section) section.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
